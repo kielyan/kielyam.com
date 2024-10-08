@@ -1,4 +1,0 @@
-<script>
-  const d = new Date();
-  let text = "John Doe";
-</script>
