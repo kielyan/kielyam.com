@@ -1,62 +1,8 @@
 <p style="background-color:DodgerBlue; text-align:left;"><a href="https://kielyan.github.io/kielyam.com/Meus_contatos_antigos.html" alt="Meus contatos antigos">👤</a><br>principe.kyam@hotmail.com<br>(66) 99697-0461<br>proncipe.kyam@gmail.com</p><p style="background-color:DodgerBlue; text-align:center;"><img src="https://kielyan.github.io/kielyam.com/images/Avatar_Kiel_Yam.png" alt=""></img>Eu sou Kiel Yam da Silva Alves!</p>
 <br>Nós podemos usar esses conteúdos, arquivos, jogos, aplicativos e entre outros, para se divertir e descontrair. Alguma dúvida, sugestão, elogio e reclamação entre o contato acima pelo número de telefone e e-mail.
 <br>
-<div class="container">
-    <h2>Leave us a comment</h2>
-    <form>
-       <textarea id="" placeholder="Add Your Comment" value=" "></textarea>
-       <div class="btn">
-           <input id="submit" type="submit" value="Comment">
-           <button id="clear">  
-            &#128591;</button>
-       </div> 
-    </form>
-</div>
-<div class="comments">
-   <h2>Comments</h2>
-    <div id="comment-box">
-    </div>
-</div>
-<script>
-const field = document.querySelector('textarea');
-const backUp = field.getAttribute('placeholder')
-const btn = document.querySelector('.btn');
-const clear = document.getElementById('clear')
-const submit = document.querySelector('#submit')
-// const comments = document.querySelector('#comment-box')
-const comments = document.getElementById('comment-box');
-
-// array to store the comments
-const comments_arr = [];
-
-// to generate html list based on comments array
-const display_comments = () => {
-  let list = '<ul>';
-   comments_arr.forEach(comment => {
-    list += `<li>${comment}</li>`;
-  })
-  list += '</ul>';
-  comments.innerHTML = list;
-}
-
-clear.onclick = function(event){
-  event.preventDefault();
-  // reset the array  
-   comments_arr.length = 0;
-  // re-genrate the comment html list
-  display_comments();
-}
-
-submit.onclick = function(event){
-    event.preventDefault();
-    const content = field.value;
-    if(content.length > 0){ // if there is content
-      // add the comment to the array
-      comments_arr.push(content);
-      // re-genrate the comment html list
-      display_comments();
-      // reset the textArea content 
-      field.value = '';
-    }
-}
-  </script>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24.DXa5iIsYB9DVNk0ahSCL1"+"&opts=16798&num=10&ts=1735865567382");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
