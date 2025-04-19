@@ -1,3 +1,20 @@
-<a href="https://ws.hubdodesenvolvedor.com.br/v2/cadastropf/?cpf=$cpf&token=172207365XepNESxAKB310915176" media="all"></a>
 
-  
+<script>
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://ws.hubdodesenvolvedor.com.br/v2/cadastropf/?cpf=72751460211&token=3239fu0293u029u3r920u3r9023ur&xml",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+</script>
