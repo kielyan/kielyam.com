@@ -1,33 +1,161 @@
-<div class="container">
-  <div class="Avatar"><img src="https://kielyan.github.io/kielyam.com/images/Avatar_Kiel_Yam.png"></img>Eu sou Kiel Yam da Silva Alves!</div>
-  <div class="Conteudo"><a href="https://kielyan.github.io/kielyam.com/Meus_contatos_antigos.html" title="Meus contatos antigos">👤</a><a href="https://kielyan.github.io/kielyam.com/regras%20de%20site/regras_de_site.html" title="Regras do site">📄<a href="https://kielyan.github.io/kielyam.com/Outros.html" title="Outros sites e redes sociais">⚫</a><br>principe.kyam@hotmail.com<br>+55 (66) 99697-0461<br>proncipe.kyam@gmail.com</div>
-</div>
-<style>
-.container {
-  position: relative; /* Cria um contexto de posicionamento para os filhos absolute */
-  margin: auto;
-  background-color: DodgerBlue;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiel Yam da Silva Alves</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- HTML Comment Box CSS -->
+  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e9f3ff;
+      color: #222;
+    }
 
-.Conteudo {
-  position: absolute; /* Posicionamento absoluto */
-  z-index: 0; /* Camada inferior */
-}
-.Conteudo p {
-    align: left;
-}
-.Avatar {
-  position: absolute; /* Posicionamento absoluto */
-  z-index: 0; /* Camada superior (valor maior que caixa1) */
-}
-  .Avatar p {
-    align: center;
-}
-</style>
-<br>Nós podemos usar esses conteúdos, arquivos, jogos, aplicativos e entre outros, para se divertir e descontrair. Alguma dúvida, sugestão, elogio e reclamação entre o contato acima pelo número de telefone e e-mail.
-<br>
-<!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
- <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24.DXa5iIsYB9DVNk0ahSCL1"+"&opts=16798&num=10&ts=1735865567382");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-<!-- end www.htmlcommentbox.com -->
+    .container {
+      max-width: 700px;
+      margin: 40px auto 0 auto;
+      background-color: DodgerBlue;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 24px 16px;
+      position: relative;
+    }
+
+    .Avatar {
+      flex: 0 0 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 24px;
+    }
+
+    .Avatar img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      background: #fff;
+      margin-bottom: 8px;
+    }
+
+    .Avatar span {
+      display: block;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+    }
+
+    .Conteudo {
+      flex: 1 1 250px;
+      color: #fff;
+      min-width: 200px;
+    }
+
+    .Conteudo .links {
+      margin-bottom: 10px;
+    }
+
+    .Conteudo .links a {
+      font-size: 1.3em;
+      margin-right: 12px;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.1s;
+    }
+
+    .Conteudo .links a:hover {
+      transform: scale(1.2);
+      color: #f5f5f5;
+      text-shadow: 0 2px 8px #0002;
+    }
+
+    .Conteudo .contatos {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .Conteudo .contatos span {
+      display: block;
+    }
+
+    .Conteudo .contatos .email,
+    .Conteudo .contatos .phone {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1em;
+    }
+
+    .Conteudo .contatos .email {
+      margin-bottom: 2px;
+    }
+
+    .Conteudo .contatos .phone {
+      margin-bottom: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+      }
+      .Avatar {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+
+    /* Comment box spacing */
+    #HCB_comment_box {
+      margin: 32px auto 0 auto;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="Avatar">
+      <img src="https://kielyan.github.io/kielyam.com/images/Avatar_Kiel_Yam.png" alt="Avatar de Kiel Yam da Silva Alves"/>
+      <span>Eu sou Kiel Yam da Silva Alves!</span>
+    </div>
+    <div class="Conteudo">
+      <div class="links">
+        <a href="https://kielyan.github.io/kielyam.com/Meus_contatos_antigos.html" title="Meus contatos antigos">👤</a>
+        <a href="https://kielyan.github.io/kielyam.com/regras%20de%20site/regras_de_site.html" title="Regras do site">📄</a>
+        <a href="https://kielyan.github.io/kielyam.com/Outros.html" title="Outros sites e redes sociais">⚫</a>
+      </div>
+      <div class="contatos">
+        <span class="email">principe.kyam@hotmail.com</span>
+        <span class="phone">+55 (66) 99697-0461</span>
+        <span class="email">proncipe.kyam@gmail.com</span>
+      </div>
+      <div class="info">
+        Nós podemos usar esses conteúdos, arquivos, jogos, aplicativos e entre outros, para se divertir e descontrair.<br>
+        Alguma dúvida, sugestão, elogio e reclamação? Entre em contato acima pelo número de telefone ou e-mail.
+      </div>
+    </div>
+  </div>
+
+  <!-- begin www.htmlcommentbox.com -->
+  <div id="HCB_comment_box">Carregando comentários...</div>
+  <script type="text/javascript" id="hcb">
+    if(!window.hcb_user){hcb_user={};}
+    (function(){
+      var s=document.createElement("script"),
+        l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"),
+        h="https://www.htmlcommentbox.com";
+      s.setAttribute("type","text/javascript");
+      s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24.DXa5iIsYB9DVNk0ahSCL1"+"&opts=16798&num=10&ts=1735865567382");
+      if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
+  <!-- end www.htmlcommentbox.com -->
+</body>
+</html>
